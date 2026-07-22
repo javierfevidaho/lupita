@@ -48,11 +48,29 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="w-full py-8 text-center text-gray-500 text-sm border-t border-white/5">
-        <p>&copy; {new Date().getFullYear()} {dict.footer.rights} | Built by JavierCode</p>
-        <div className="mt-2 space-x-4">
-          <a href="/privacidad" className="hover:text-gold-400">{dict.footer.privacy}</a>
-          <a href="/terminos" className="hover:text-gold-400">{dict.footer.terms}</a>
+      <footer className="w-full py-8 border-t border-white/5 flex flex-col items-center">
+        <p className="text-gray-500 text-sm mb-4">&copy; {new Date().getFullYear()} {dict.footer.rights}</p>
+        <div className="space-x-4 mb-6 text-gray-500 text-sm">
+          <a href="/privacidad" className="hover:text-gold-400 transition-colors">{dict.footer.privacy}</a>
+          <a href="/terminos" className="hover:text-gold-400 transition-colors">{dict.footer.terms}</a>
+        </div>
+        
+        {/* Built by JavierCode Badge */}
+        <div className="flex items-center justify-center gap-2 text-xs text-gray-500">
+          <span>Built by</span>
+          <a
+            href="https://javiercode.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 px-3 py-1 bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-cyan-500/10 border border-indigo-500/20 rounded-full hover:border-indigo-500/40 transition-all duration-300 group"
+          >
+            <span className="font-semibold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent group-hover:from-indigo-300 group-hover:via-purple-300 group-hover:to-cyan-300">
+              JavierCode
+            </span>
+            <svg className="w-3 h-3 text-indigo-400 group-hover:text-indigo-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
         </div>
       </footer>
     </main>
