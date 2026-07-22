@@ -33,7 +33,7 @@ export default function ProjectGallery() {
     <section id="gallery" className="w-full py-24 px-6 bg-dark-800">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             {dict.gallery.title} <span className="text-metallic">{dict.gallery.titleHighlight}</span>
           </h2>
           <p className="text-gray-400 text-lg">{dict.gallery.subtitle}</p>

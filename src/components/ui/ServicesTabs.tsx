@@ -37,7 +37,7 @@ export default function ServicesTabs() {
     <section id="services" className="w-full py-24 px-6 bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
             {dict.services.title} <span className="text-metallic">{dict.services.titleHighlight}</span>
           </h2>
           <p className="text-gray-400 text-lg">{dict.services.subtitle}</p>
